@@ -157,7 +157,7 @@ if ($gClient->getAccessToken()) {
 		  <div class="nav_menu">
 			<nav>
 			  <div class="nav toggle">
-				<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+				<a id="menu_toggle"><i class="fa fa-navicon"></i></a>
 			  </div>
 
 			  </nav>
@@ -195,7 +195,7 @@ if ($gClient->getAccessToken()) {
 
 					<ul class="list-unstyled timeline widget">
 					<?php
-					$search = mysql_query("SELECT * FROM project NATURAL JOIN users") or die(mysql_error());
+					$search = mysql_query("SELECT * FROM project JOIN users ON project.u_id=users.id") or die(mysql_error());
 					while($row=mysql_fetch_array($search))
 					{
 					?>
