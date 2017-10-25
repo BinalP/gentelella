@@ -159,7 +159,16 @@ if ($gClient->getAccessToken()) {
 			  <div class="nav toggle">
 				<a id="menu_toggle"><i class="fa fa-navicon"></i></a>
 			  </div>
-
+			  <div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search" style="padding-top: 20px;">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
 			  </nav>
 		  </div>
 		</div>
