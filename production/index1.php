@@ -325,6 +325,8 @@ if ($gClient->getAccessToken()) {
 				  <li><a href="home.php"><i class="fa fa-home"></i> Home</a>
 				  </li>
 				  <li><a href="plot.php"><i class="fa fa-area-chart"></i> Plot an Equation</a>
+				  <li><a href="index.php"><i class="fa fa-key"></i> Login/Register</a>
+				  </li>
 				  <li><a href="contact_us.php"><i class="fa fa-paper-plane"></i> Contact Us</a>
 				  </li>
 				</ul>
@@ -342,7 +344,16 @@ if ($gClient->getAccessToken()) {
 			  <div class="nav toggle">
 				<a id="menu_toggle"><i class="fa fa-bars"></i></a>
 			  </div>
-
+							<div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search" style="padding-top: 20px;">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
 			  </nav>
 		  </div>
 		</div>
@@ -351,7 +362,6 @@ if ($gClient->getAccessToken()) {
 		<!-- page content -->
 		<div class="right_col" role="main">
 		  <!-- top tiles -->
-		  
 		  <!-- /top tiles -->
 
 		  <div class="row">
