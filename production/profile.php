@@ -127,7 +127,7 @@ if ($gClient->getAccessToken()) {
 				<div class="menu_section">
 				<h3>General</h3>
 				<ul class="nav side-menu">
-					<li><a href="home.php"><i class="fa fa-home"></i> Home</a>
+					<li><a href="index1.php"><i class="fa fa-home"></i> Home</a>
 					</li>
 					<li><a href="plot.php"><i class="fa fa-area-chart"></i> Plot an Equation</a>
 					</li>
@@ -135,9 +135,7 @@ if ($gClient->getAccessToken()) {
 					</li>
 					<li><a href="notification.php"><i class="fa fa-envelope"></i> Notifications</a>
 					</li>
-					<li><a href="profile.php"><i class="fa fa-user"></i> My Profile</a>
-					</li>
-					<li><a href="contact_us.php"><i class="fa fa-paper-plane"></i> Contact Us</a>
+					<li><a href="profile.php?uid=<?php echo $userd['id'];?>"><i class="fa fa-user"></i> My Profile</a>
 					</li>
 				</ul>
 				</div>
@@ -212,16 +210,6 @@ if ($gClient->getAccessToken()) {
 													<a><?php echo $usr['email'];?></a>
 												</li>
 											</ul>
-											<?php
-											if($userd['id']==$proid)
-											{
-												?>
-											<a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>
-											<br />
-
-											<?php
-											}
-											?>
 											<!-- start skills -->
 											
 											<!-- end of skills -->
@@ -343,7 +331,7 @@ if ($gClient->getAccessToken()) {
 	<body class="nav-md">
 	<div class="container body">
 		<div class="main_container">
-		<div class="col-md-3 left_col">
+		<div class="col-md-3 left_col menu_fixed">
 			<div class="left_col scroll-view">
 			<div class="navbar nav_title" style="border: 0;">
 				<a href="index.html" class="site_title"><i class="fa fa-line-chart"></i> <span>MathTool</span></a>
@@ -358,12 +346,10 @@ if ($gClient->getAccessToken()) {
 				<div class="menu_section">
 				<h3>General</h3>
 				<ul class="nav side-menu">
-					<li><a href="home.php"><i class="fa fa-home"></i> Home</a>
+					<li><a href="index1.php"><i class="fa fa-home"></i> Home</a>
 					</li>
 					<li><a href="plot.php"><i class="fa fa-area-chart"></i> Plot an Equation</a>
-					<li><a href="index.php"><i class="fa fa-key"></i> Login/Register</a>
-					</li>
-					<li><a href="contact_us.php"><i class="fa fa-paper-plane"></i> Contact Us</a>
+					<li><a href="index.php"><i class="fa fa-key"></i> Login / Register</a>
 					</li>
 				</ul>
 				</div>
@@ -429,7 +415,6 @@ if ($gClient->getAccessToken()) {
 													<a><?php echo $usr['email'];?></a>
 												</li>
 											</ul>
-										
 											<!-- start skills -->
 											
 											<!-- end of skills -->
